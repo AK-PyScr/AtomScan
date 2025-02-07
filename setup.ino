@@ -1,8 +1,8 @@
 
 void setup() {
   pinMode(9, OUTPUT);
-  // PWM_frequency(9, 3800, FAST_PWM);
-  // PWM_set(9, 239);
+  PWM_frequency(9, 6000, FAST_PWM);
+  PWM_set(9, 239);
   oled.init();  // инициализация
   oled.clear();   // очистить дисплей (или буфер)
   oled.update();  // обновить. Только для режима с буфером! OLED_BUFFER

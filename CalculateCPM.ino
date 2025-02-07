@@ -9,9 +9,8 @@ uint8_t index = 0;                                           // Индекс т�
 int SUMofCounts;                                             // сумма частиц в массиве
 boolean indexFlag = false;
 
-float CPS = 0;                                               // чатици в секунду
-float CPM = 0;                                               // чатици в минуту
-float doza = 0;    
+
+
 
 int Counts[ARRAY_LEN];      
 
@@ -39,9 +38,10 @@ void CalculateCPM() {
     
     doza = testFilter.filtered(CPM * FON_NORMA / NORMA);
     // float doza1 = (CPM * FON_NORMA / NORMA);
-
+    
     // Отправляем значения для двух графиков, разделяя их запятыми
-    Serial.print(doza);
+    Serial.print(sec);
+    // Serial.print(doza);
     // Serial.print(",");  // Разделитель между графиками
     // Serial.println(doza1);  // Второй график
 
